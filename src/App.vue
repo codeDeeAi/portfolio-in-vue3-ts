@@ -1,13 +1,19 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import PreLoader from './components/PreLoader.vue'
 import FloatingMenu from './components/utils/FloatingMenu.vue'
 import Main from './components/pages/Main.vue'
+import { usePreferencesStore } from './stores/preferences'
 
 // Data
 const isLoaded = ref<Boolean>(false);
+
+// Watcher
+watch(isLoaded, (value) => {
+  usePreferencesStore().setPreloaderState(value);
+})
 
 // ## Methods
 /**
@@ -21,6 +27,7 @@ const toggleLoader = (): void => {
 }
 
 // ## On created
+usePreferencesStore().setPreloaderState(false);
 toggleLoader();
 </script>
 
@@ -43,11 +50,14 @@ toggleLoader();
 }
 
 ::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
 }
+
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    background: #FF0000;
+  /* background: #FF0000; */
 }
 </style>

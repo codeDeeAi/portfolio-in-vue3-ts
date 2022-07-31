@@ -6,6 +6,7 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 
+import 'animate.css';
 import './assets/main.css'
 import './assets/tailwind.css'
 

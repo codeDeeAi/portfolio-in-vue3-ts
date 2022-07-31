@@ -5,9 +5,9 @@
             class="flex justify-center border 
             border-blue-600 hover:bg-blue-600 hover:text-white 
             font-medium rounded-lg text-sm p-1  dark:border-blue-500 
-            dark:text-blue-500 dark:hover:text-white dark:focus:ring-blue-800" :class="{
-                'text-white bg-blue-600': usePreferencesStore().getCurLang === lang.short,
-                'text-sky-700': usePreferencesStore().getCurLang !== lang.short
+             dark:hover:text-white dark:focus:ring-blue-800" :class="{
+                'text-white bg-blue-600 dark:text-white': usePreferencesStore().getCurLang === lang.short,
+                'text-sky-700 dark:text-blue-500': usePreferencesStore().getCurLang !== lang.short
             }">
             <span class="m-auto">{{ lang.short }}</span>
             <span class="sr-only">{{ `Select ${lang.name} language` }}}</span>

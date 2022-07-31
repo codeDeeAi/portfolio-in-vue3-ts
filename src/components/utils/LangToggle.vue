@@ -16,12 +16,11 @@
 </template>
 <script setup lang="ts">
 import { ref } from 'vue';
-import { usePreferencesStore } from '@/stores/preferences'
-
+import { usePreferencesStore } from '@/stores/preferences';
 // Interface
 interface AllowedLanguage {
     name: string;
-    short: string;
+    short: "en" | "ar" | "nl" | "yor";
 }
 // Data
 const allowedLanguages = ref<AllowedLanguage[]>([
@@ -32,16 +31,3 @@ const allowedLanguages = ref<AllowedLanguage[]>([
 ]);
 
 </script>
-
-<!-- // Initialize translator
-var translator = new Translator({
-    persist: false,
-    languages: ['en', 'ar', 'yor'],
-    defaultLanguage: 'en',
-    detectLanguage: true,
-    filesLocation: '/i18n',
-});
-
-translator.load(getCurrentLanguage()); // getCurrentLanguage() is gotten from lang.js
-
-// Note: To translate html add  this -> data-i18n="" to html attribute -->

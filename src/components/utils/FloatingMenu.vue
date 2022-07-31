@@ -1,7 +1,7 @@
 <template>
     <div class="grid justify-items-end space-y-8">
         <!-- Content -->
-        <div v-if="showTray" class="transition-all ease-in-out">
+        <div v-if="showTray" class="transition-all ease-in-out delay-150">
 
             <ul class="list-none capitalize mr-2 space-y-2">
                 <li v-for="(item, index) in menuItems" :key="index" class="flex transition-all ease-in-out justify-end hover:border-b-2 md:hover:border-b-4 border-sky-400
@@ -33,7 +33,7 @@
 
         <!-- Floating Btn -->
         <button @click="showTray = !showTray"
-            class="relative rounded-full border w-12 h-12 md:w-16 md:h-16 shadow-sm shadow-green-800">
+            class="relative rounded-full border w-12 h-12 md:w-16 md:h-16 shadow-sm shadow-green-800 animate-pulse">
             <span class="flex justify-center">
                 <svg v-if="!showTray" class="w-4/6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">

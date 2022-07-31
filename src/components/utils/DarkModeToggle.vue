@@ -28,7 +28,8 @@ loadCurrentMode();
                 stroke="currentColor" stroke-width="2">
                 <path stroke-linecap="round" stroke-linejoin="round"
                     d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-            </svg></span>
+            </svg>
+        </span>
         <Switch v-model="enabled" :class="enabled ? 'bg-gray-500' : 'bg-gray-300'"
             class="relative inline-flex h-7 w-[60px] shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             <span class="sr-only">Toggle Dark Mode</span>

@@ -1,10 +1,10 @@
 const arTrans = {
     menu: {
         items: {
-            home: "home",
-            projects: "projects",
-            tools: "tools",
-            "about me": "about me"
+            home: "الصفحة الرئيسية",
+            projects: "المشاريع",
+            tools: "أدوات",
+            "about me": "عني"
         }
     },
 };

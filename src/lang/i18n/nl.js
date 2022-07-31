@@ -1,10 +1,10 @@
 const nlTrans = {
     menu: {
         items: {
-            home: "home",
-            projects: "projects",
-            tools: "tools",
-            "about me": "about me"
+            home: "huis",
+            projects: "projecten",
+            tools: "hulpmiddelen",
+            "about me": "over mij"
         }
     },
 };

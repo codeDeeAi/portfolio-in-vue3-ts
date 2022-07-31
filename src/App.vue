@@ -3,7 +3,9 @@ import { ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import PreLoader from './components/PreLoader.vue'
+import FloatingMenu from './components/utils/FloatingMenu.vue'
 
+// Data
 const isLoaded = ref<Boolean>(false);
 
 // ## Methods
@@ -22,24 +24,17 @@ toggleLoader();
 </script>
 
 <template>
-  <!-- Loader -->
-  <PreLoader v-if="!isLoaded" />
-  <!-- Loader Ends -->
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+  <section class="h-screen w-screen overflow-hidden relative dark:bg-stone-500">
+    <!-- Loader -->
+    <PreLoader v-if="!isLoaded" />
+    <!-- Loader Ends -->
+    <RouterView class="h-full scroll-smooth container mx-auto px-4" />
+    <FloatingMenu class="absolute bottom-4 right-3 z-40" />
+  </section>
 </template>
 
-<style scoped>
+<style>
+#app {
+  font-family: 'Comfortaa', 'Roboto', serif;
+}
 </style>

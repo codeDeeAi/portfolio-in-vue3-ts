@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '@/components/TheWelcome.vue'
+import IntroSection from "../components/pages/IntroSection.vue";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <IntroSection />
   </main>
 </template>

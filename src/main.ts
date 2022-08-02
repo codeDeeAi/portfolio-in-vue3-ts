@@ -12,10 +12,8 @@ import './assets/tailwind.css'
 
 import 'flowbite';
 
-import messages from './lang/index';
-import {usePreferencesStore} from './stores/preferences'
-
-
+import  messages  from './lang/index';
+import { usePreferencesStore } from './stores/preferences'
 
 const app = createApp(App)
 
@@ -29,7 +27,7 @@ const i18n = createI18n({
     locale: usePreferencesStore().getCurLang, // set locale
     fallbackLocale: 'en', // set fallback locale
     silentFallbackWarn: true,
-    silentTranslationWarn: true,    
+    silentTranslationWarn: true,
     messages
 });
 

@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import PreLoader from './components/PreLoader.vue'
 import FloatingMenu from './components/utils/FloatingMenu.vue'
 import Main from './components/pages/Main.vue'

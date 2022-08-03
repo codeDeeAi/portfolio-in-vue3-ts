@@ -12,7 +12,7 @@ import './assets/tailwind.css'
 
 import 'flowbite';
 
-import  messages  from './lang/index';
+import messages  from './lang/index';
 import { usePreferencesStore } from './stores/preferences'
 
 const app = createApp(App)

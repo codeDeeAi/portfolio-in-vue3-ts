@@ -31,7 +31,7 @@ toggleLoader();
 </script>
 
 <template>
-  <section class="h-screen w-screen overflow-hidden relative dark:bg-stone-500">
+  <section class="h-screen w-screen overflow-hidden relative">
     <!-- Loader -->
     <PreLoader v-if="!isLoaded" />
     <!-- Loader Ends -->

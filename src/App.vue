@@ -23,11 +23,20 @@ const toggleLoader = (): void => {
   window.onload = function () {
     return isLoaded.value = true;
   };
+};
+
+/**
+ * 
+ */
+const loadCurrentMode = () => {
+  let root = document.documentElement;
+  if (usePreferencesStore().getDarkMode && !root.classList.contains('dark')) return root.classList.add('dark');
 }
 
 // ## On created
 usePreferencesStore().setPreloaderState(false);
 toggleLoader();
+loadCurrentMode();
 </script>
 
 <template>

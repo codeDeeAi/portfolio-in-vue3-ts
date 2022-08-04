@@ -55,7 +55,7 @@ loadCurrentMode();
       <Main />
       <!-- <RouterView class="h-full scroll-smooth container mx-auto px-4" /> -->
     </div>
-    <FloatingMenu class="absolute bottom-4 right-3 md:right-4 lg:right-5 z-40" />
+    <FloatingMenu class="absolute bottom-10 sm:bottom-6 md:bottom-4 right-9 sm:right-3 md:right-4 lg:right-5 z-40" />
   </section>
 </template>
 

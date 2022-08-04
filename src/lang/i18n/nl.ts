@@ -8,7 +8,7 @@ const nlTrans = {
         },
     },
     hero_section: {
-        desc: "Digitale oplossingen bouwen met code. Ik ben een { Fullstack Developer } wiens interesse ligt in het bouwen van een efficiënt, snel en schaalbaar modern webtoepassingen",
+        desc: "Digitale oplossingen bouwen met code. Ik ben een < Fullstack Developer /> wiens interesse ligt in het bouwen van een efficiënt, snel en schaalbaar modern webtoepassingen",
         resume: "resumé"
     }
 };

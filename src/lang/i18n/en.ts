@@ -8,7 +8,7 @@ const enTrans = {
         },
     },
     hero_section: {
-        desc: "Building digital solutions with code. I am a { Fullstack Developer } whose interest lies in building efficient, fast and scalable modern webapplications",
+        desc: "Building digital solutions with code. I am a < Fullstack Developer /> whose interest lies in building efficient, fast and scalable modern webapplications",
         resume: "Resume"
     }
 };

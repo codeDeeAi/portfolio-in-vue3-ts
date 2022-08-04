@@ -30,7 +30,14 @@ const toggleLoader = (): void => {
  */
 const loadCurrentMode = () => {
   let root = document.documentElement;
-  if (usePreferencesStore().getDarkMode && !root.classList.contains('dark')) return root.classList.add('dark');
+  if (usePreferencesStore().getDarkMode && !root.classList.contains('dark')) {
+    root.classList.add('dark'); // Persist dark mode 
+  }
+  if (usePreferencesStore().getCurLang === 'ar') {
+    root.dir = 'rtl';
+  } else {
+    root.dir = 'ltr';
+  }
 }
 
 // ## On created

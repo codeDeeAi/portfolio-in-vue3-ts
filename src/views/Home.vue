@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { usePreferencesStore } from '@/stores/preferences';
 import SocialList from '../components/utils/SocialList.vue';
+import NameRouter from '../components/utils/NameRouter.vue';
 
 </script>
 <template>
     <header class="flex justify-center content">
         <div class="m-auto w-5/6 lg:w-4/6 space-y-8 sm:space-y-14 md:space-y-16">
-            <h3 class="font-semibold animate__animated  transition-all duration-75"
-                :class="{ 'animate__fadeInLeft': usePreferencesStore().getPreloaderState == true }"> <span
-                    class="border-2 p-3 border-black dark:border-white">Adeola Bada</span> </h3>
+            <NameRouter />
 
             <h1 class="text-center font-bold text-4xl sm:text-5xl lg:text-7xl animate__animated  transition-all duration-150"
                 :class="{ 'animate__zoomIn': usePreferencesStore().getPreloaderState == true }">Fullstack Web Developer

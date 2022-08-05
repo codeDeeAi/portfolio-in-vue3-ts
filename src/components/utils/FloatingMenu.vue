@@ -7,9 +7,9 @@
             <ul class="list-none capitalize mr-2 space-y-2">
                 <li v-for="(item, index) in menuItems" :key="index" class="flex transition-all ease-in-out justify-end hover:border-b-2 md:hover:border-b-4 border-black dark:border-white
                 " :class="{ 'animate__animated animate__slideInUp': showTray }">
-                    <a class="font-semibold text-2xl capitalize" href="javascript:void(0)">
+                    <router-link :to="{ name: item.route }" class="font-semibold text-2xl capitalize">
 
-                        {{ $t(`menu.items.${item.name}`) }} </a>
+                        {{ $t(`menu.items.${item.name}`) }} </router-link>
                 </li>
             </ul>
             <ul class="list-none capitalize mr-2 space-y-4 mt-6">
@@ -55,14 +55,15 @@ import LangToggle from './LangToggle.vue';
 // Interfaces
 interface MenuItem {
     name: string;
+    route: string;
 };
 // Data
 const showTray = ref<Boolean>(false);
 const menuItems = ref<MenuItem[]>([
-    { name: 'home' },
-    { name: 'projects' },
-    { name: 'tools' },
-    { name: 'about me' },
+    { name: 'home', route: 'home' },
+    { name: 'projects', route: 'projects' },
+    { name: 'tools', route: 'tools' },
+    { name: 'about me', route: 'about' },
 ]);
 
 // Methods

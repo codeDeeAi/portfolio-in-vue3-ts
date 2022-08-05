@@ -3,7 +3,7 @@ import { usePreferencesStore } from '@/stores/preferences';
 
 </script>
 <template>
-    <header class="h-screen w-screen bg-white text-black flex justify-center content dark:bg-black dark:text-white">
+    <header class="flex justify-center content">
         <div class="m-auto w-5/6 lg:w-4/6 space-y-8 sm:space-y-14 md:space-y-16">
             <h3 class="font-semibold animate__animated  transition-all duration-75"
                 :class="{ 'animate__fadeInLeft': usePreferencesStore().getPreloaderState == true }"> <span

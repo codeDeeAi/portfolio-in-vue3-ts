@@ -1,9 +1,8 @@
 <script setup lang="ts">
 import { ref, watch } from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router';
 import PreLoader from './components/PreLoader.vue'
 import FloatingMenu from './components/utils/FloatingMenu.vue'
-import Main from './components/pages/Main.vue'
 import { usePreferencesStore } from './stores/preferences'
 
 // Data
@@ -47,12 +46,16 @@ loadCurrentMode();
 </script>
 
 <template>
-  <div class="h-screen w-screen overflow-hidden relative">
-      <!-- Loader -->
-      <PreLoader v-if="!isLoaded" />
-      <!-- Loader Ends -->
-      <Main class="scroll-smooth h-full w-full" />
-      <!-- <RouterView class="h-full scroll-smooth container mx-auto px-4" /> -->
+  <div
+    class="h-screen w-screen overflow-hidden relative bg-white text-black flex justify-center content dark:bg-black dark:text-white">
+    <!-- Loader -->
+    <PreLoader v-if="!isLoaded" />
+    <!-- Loader Ends -->
+    <router-view v-slot="{ Component }" class="h-full w-full scroll-smooth container mx-auto px-4">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
     <FloatingMenu class="absolute bottom-10 sm:bottom-6 md:bottom-4 right-9 sm:right-3 md:right-4 lg:right-5 z-40" />
   </div>
 </template>
@@ -71,6 +74,16 @@ loadCurrentMode();
 
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  /* background: #FF0000; */
+  background: #FF0000;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

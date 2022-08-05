@@ -1,8 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Projects from '../views/Projects.vue'
-import Tools from '../views/Tools.vue'
-import About from '../views/AboutMe.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,17 +12,26 @@ const router = createRouter({
     {
       path: '/projects',
       name: 'projects',
-      component: Projects
+      // route level code-splitting
+      // this generates a separate chunk (Project.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Projects.vue')
     },
     {
       path: '/tools',
       name: 'tools',
-      component: Tools
+      // route level code-splitting
+      // this generates a separate chunk (Tools.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Tools.vue')
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      // route level code-splitting
+      // this generates a separate chunk (AboutMe.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AboutMe.vue')
     }
   ]
 })

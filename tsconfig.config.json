@@ -5,6 +5,7 @@
     "composite": true,
     "types": ["node"],
     "allowJs": true,
-    "checkJs": false
+    "checkJs": false,
+    "suppressImplicitAnyIndexErrors": true
   },
 }

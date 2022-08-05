@@ -17,7 +17,11 @@ const data = ref([
             },
             {
                 link: "javascript-svgrepo-com.svg",
-                name: "Javascript",
+                name: "JavaScript",
+            },
+            {
+                link: "typescript.svg",
+                name: "TypeScript",
             },
             {
                 link: "vue-9-logo-svgrepo-com.svg",
@@ -48,8 +52,20 @@ const data = ref([
                 name: "Laravel",
             },
             {
+                link: "node-js.svg",
+                name: "Node Js",
+            },
+            {
+                link: "expressjs.svg",
+                name: "Express Js",
+            },
+            {
                 link: "sql-svgrepo-com.svg",
                 name: "Sql",
+            },
+            {
+                link: "mongodb.svg",
+                name: "Mongo DB",
             },
         ]
     },
@@ -74,6 +90,10 @@ const data = ref([
             {
                 link: "jira-svgrepo-com.svg",
                 name: "Jira",
+            },
+            {
+                link: "slack.svg",
+                name: "Slack",
             },
         ]
     },

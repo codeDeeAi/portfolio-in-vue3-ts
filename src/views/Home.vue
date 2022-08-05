@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { usePreferencesStore } from '@/stores/preferences';
+import SocialList from '../components/utils/SocialList.vue';
 
 </script>
 <template>
@@ -20,25 +21,14 @@ import { usePreferencesStore } from '@/stores/preferences';
             <div class="grid md:grid-cols-2 space-y-4 animate__animated  transition-all ease-in-out"
                 :class="{ 'animate__fadeInUp animate__delay-2s': usePreferencesStore().getPreloaderState == true }">
                 <div class="flex justify-center md:justify-start space-x-2">
-                    <button class="relative inline-flex justify-center overflow-hidden p-2 rounded-lg shadow-sm border border-black dark:border-white
-                        dark:bg-white my-auto">
-                        <img src="/svg/github-svgrepo-com.svg" class="w-6 m-auto" alt="">
-                    </button>
-                    <button class="relative inline-flex justify-center overflow-hidden p-2 rounded-lg shadow-sm border border-black dark:border-white
-                        dark:bg-white my-auto">
-                        <img src="/svg/icons8-linkedin-2.gif" class="w-6 m-auto" alt="">
-                    </button>
-                    <button class="relative inline-flex justify-center overflow-hidden p-2 rounded-lg shadow-sm border border-black dark:border-white
-                        dark:bg-white my-auto">
-                        <img src="/svg/icons8-twitter.svg" class="w-6 m-auto" alt="">
-                    </button>
+                    <SocialList />
                 </div>
                 <div class="flex justify-center md:justify-end">
-                    <button class="relative inline-flex items-center my-auto justify-center overflow-hidden text-sm font-medium 
+                    <a href="https://docs.google.com/document/d/1okaqsmiuCgyqf4zxqJ1wNJG4i71-njDJLHzOD_70N4E/edit?usp=sharing" target="_blank" class="relative inline-flex items-center my-auto justify-center overflow-hidden text-sm font-medium 
                         capitalize px-5 py-2.5 
                         border-2 btn-primary">
                         {{ $t('hero_section.resume') }}
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

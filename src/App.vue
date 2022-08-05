@@ -47,16 +47,14 @@ loadCurrentMode();
 </script>
 
 <template>
-  <section class="h-screen w-screen overflow-hidden relative">
-    <!-- Loader -->
-    <PreLoader v-if="!isLoaded" />
-    <!-- Loader Ends -->
-    <div class="h-full scroll-smooth">
-      <Main />
+  <div class="h-screen w-screen overflow-hidden relative">
+      <!-- Loader -->
+      <PreLoader v-if="!isLoaded" />
+      <!-- Loader Ends -->
+      <Main class="scroll-smooth h-full w-full" />
       <!-- <RouterView class="h-full scroll-smooth container mx-auto px-4" /> -->
-    </div>
     <FloatingMenu class="absolute bottom-10 sm:bottom-6 md:bottom-4 right-9 sm:right-3 md:right-4 lg:right-5 z-40" />
-  </section>
+  </div>
 </template>
 
 <style>

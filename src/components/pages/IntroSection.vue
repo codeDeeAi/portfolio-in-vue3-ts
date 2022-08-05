@@ -3,7 +3,7 @@ import { usePreferencesStore } from '@/stores/preferences';
 
 </script>
 <template>
-    <header class="h-screen bg-white text-black flex justify-center dark:bg-black dark:text-white">
+    <header class="h-screen w-screen bg-white text-black flex justify-center content dark:bg-black dark:text-white">
         <div class="m-auto w-5/6 lg:w-4/6 space-y-8 sm:space-y-14 md:space-y-16">
             <h3 class="font-semibold animate__animated  transition-all duration-75"
                 :class="{ 'animate__fadeInLeft': usePreferencesStore().getPreloaderState == true }"> <span
@@ -42,11 +42,6 @@ import { usePreferencesStore } from '@/stores/preferences';
                 </div>
             </div>
         </div>
-    </header>
-    <header class="h-screen bg-gray-50">
-        Building digital solutions with code.
-        I am a { Fullstack Developer } whose interest lies in building efficient, fast and scalable modern web
-        applications
     </header>
 </template>
 <style scoped>

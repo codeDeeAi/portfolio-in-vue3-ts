@@ -6,16 +6,9 @@ module.exports = {
         extend: {
             backgroundImage: {
                 'jigsaw': "url('/svg/jigsaw.svg')",
+                'head': "url('/images/1-rb.png')",
             },
-            colors: {
-                stylish: {
-                    dark: '#5D5C61',
-                    brown: '#379683',
-                    bluedeep: '#557A95',
-                    blue: '#7395AE',
-                    chocolate: '#B1A296'
-                }
-            }
+            colors: {}
         },
     },
     plugins: [

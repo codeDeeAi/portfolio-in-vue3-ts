@@ -6,9 +6,16 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import App from './App.vue'
 import router from './router'
 
+import VueSplide from '@splidejs/vue-splide';
+
 import 'animate.css';
 import './assets/main.css'
 import './assets/tailwind.css'
+
+import '@splidejs/vue-splide/css';
+// import '@splidejs/vue-splide/css/skyblue';
+// import '@splidejs/vue-splide/css/sea-green';
+// import '@splidejs/vue-splide/css/core';
 
 import 'flowbite';
 
@@ -31,6 +38,8 @@ const i18n = createI18n({
     messages
 });
 
-app.use(i18n)
+app.use(i18n);
+
+app.use( VueSplide );
 
 app.mount('#app')

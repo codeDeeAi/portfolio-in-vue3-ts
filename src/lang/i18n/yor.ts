@@ -15,6 +15,14 @@ const yorTrans = {
         desc: `Oruko mi ni Adeola Bada. Mo ni abẹlẹ ni Imọ-ẹrọ Ilu. Ifẹ mi si awọn kọnputa ti mu mi lepa iṣẹ ni idagbasoke sọfitiwia.
         Mo jẹ akẹẹkọ ti o yara pẹlu iwulo to jinlẹ si awọn iṣoro, Mo ni itara nla fun kikọ igbalode, iyara, rọrun, daradara, ati awọn ojutu oju opo wẹẹbu iwọn.
         Ni akoko apoju mi, Mo nifẹ ṣiṣe awọn ere fidio, lilo akoko pẹlu ẹbi mi tabi rin aja mi.`
+    },
+
+    projects_section: {
+        controls: {
+            next: "t'okan",
+            previous: "Ti tẹlẹ",
+        },
+        scroll_desc: "Yi lọ/Rẹ petele lati wo diẹ sii"
     }
 };
 

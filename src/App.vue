@@ -74,7 +74,8 @@ loadCurrentMode();
 
 /* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-  background: #FFFFFF;
+  background: #d1d5db;
+  border-radius: 10px;
 }
 
 .fade-enter-active,

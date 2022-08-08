@@ -51,21 +51,6 @@ const data = ref([
                 <div class="absolute inset-0 pointer-events-none border border-black/5 rounded-xl dark:border-white/5">
                 </div>
             </div>
-            <!-- 
-            <Splide :options="{ rewind: true }" aria-label="My Favorite Images">
-                <SplideSlide>
-                    <ProjectCard />
-                </SplideSlide>
-                <SplideSlide>
-                    <div class="bg-gray-500 p-5">
-                        jjjjjj
-                    </div>
-                </SplideSlide>
-            </Splide> -->
-            <!-- <div class="grid text-center text-lg sm:text-xl lg:text-3xl space-y-6 leading-relaxed animate__animated  transition-all duration-300"
-                :class="{ 'animate__fadeInRight animate__delay-1s': usePreferencesStore().getPreloaderState == true }">
-                <ToolsModal v-for="(tool, index) in data" :key="index" :title="tool.name" :data="tool.icons" />
-            </div> -->
         </div>
     </div>
 </template>

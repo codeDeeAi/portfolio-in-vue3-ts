@@ -20,8 +20,17 @@ const nlTrans = {
         controls: {
             next: "Volgende",
             previous: "Vorig",
+            read_more: "Lees verder",
+            description: "Omschrijving",
+            tags: "tags",
+            links: "links",
         },
-        scroll_desc: "Scroll/swipe horizontaal om meer te zien"
+        scroll_desc: "Scroll/swipe horizontaal om meer te zien",
+        projects:{
+            1: `Thrift.io is een applicatie die helpt bij het verzamelen en organiseren van spaarzaamheid (in de volksmond bekend als AJO) onder familie en vrienden. Thrift.io staat toe
+            u kunt meerdere spaargroepen maken, leden beheren, vervaldatums voor spaarzaamheid berekenen enz. terwijl u een handig overzicht krijgt van uw financiën`,
+            2: `Finance Tracker/Logger helpt gebruikers bij het bijhouden van dagelijkse inkomsten, uitgaven en besparingen voor verschillende accounts en geeft ook resultaten weer via lijsten en grafieken`,
+        }
     }
 };
 

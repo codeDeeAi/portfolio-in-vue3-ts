@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { usePreferencesStore } from '@/stores/preferences';
 import { ref } from 'vue';
-import ToolsModal from '../components/utils/ToolsModal.vue';
 import NameRouter from '../components/utils/NameRouter.vue';
 import ProjectCard from '../components/utils/ProjectCard.vue';
+import projects from "@/data/projects"
 // Data
 const data = ref([
 ]);
@@ -40,9 +40,7 @@ const data = ref([
                 <div class="relative overflow-auto">
                     <div class="bg-stripes-pink w-6 absolute left-0 top-0 bottom-0 rounded-l-lg"></div>
                     <div class="w-full flex gap-8 snap-x scroll-pl-6 overflow-x-auto py-6">
-                          <ProjectCard />
-                          <ProjectCard />
-                          <ProjectCard />
+                          <ProjectCard v-for="(project, index) in projects" :key="index" :data="project" />
                         <div class="snap-start shrink-0 first:pl-6 last:pr-[calc(100%-21.5rem)]">
                            <!-- Control card -->
                         </div>

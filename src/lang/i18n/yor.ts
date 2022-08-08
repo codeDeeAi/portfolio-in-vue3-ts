@@ -21,8 +21,17 @@ const yorTrans = {
         controls: {
             next: "t'okan",
             previous: "Ti tẹlẹ",
+            read_more: "Ka siwaju",
+            description: "apejuwe",
+            tags: "awọn afi",
+            links: "awọn ọna asopọ",
         },
-        scroll_desc: "Yi lọ/Rẹ petele lati wo diẹ sii"
+        scroll_desc: "Yi lọ/Rẹ petele lati wo diẹ sii",
+        projects: {
+            1: `Thrift.io jẹ ohun elo ti o ṣe iranlọwọ pẹlu ikojọpọ ati iṣeto awọn ohun-ini (ti o gbajumọ si AJO) laarin ẹbi ati awọn ọrẹ. Thrift.io gba laaye
+            o lati ṣẹda awọn ẹgbẹ onijagidijagan lọpọlọpọ, iṣakoso awọn members, ṣe iṣiro awọn ọjọ ti o yẹ thrifte ati bẹbẹ lọ lakoko ti o fun ọ ni awotẹlẹ inyuitive ti awọn inawo rẹ`,
+            2: `Finance Tracker/Logger ṣe iranlọwọ fun awọn olumulo lati tọpa owo-wiwọle ojoojumọ, awọn inawo ati fifipamọ fun oriṣiriṣi awọn akọọlẹ ati tun ṣe awọn abajade jade nipasẹ awọn atokọ ati awọn shatti`,
+        }
     }
 };
 

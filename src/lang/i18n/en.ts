@@ -21,8 +21,17 @@ const enTrans = {
         controls: {
             next: "Next",
             previous: "Previous",
+            read_more: "Read more",
+            description: "Description",
+            tags: "tags",
+            links: "links",
         },
-        scroll_desc: "Scroll/Swipe horizontally to view more"
+        scroll_desc: "Scroll/Swipe horizontally to view more",
+        projects:{
+            1: `Thrift.io is an application that helps with collection and organization of thrifts (popularly known as AJO) amongst family and friends. Thrift.io allows
+            you to create multiple thrift groups, managing memebers, calculate thrifte due dates etc while giving you an inyuitive overview of you finances`,
+            2: `Finance Tracker/Logger helps users track daily income, expenses and saving for different accounts and also outputs results via lists and charts`,
+        }
     }
 };
 

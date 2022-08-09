@@ -34,13 +34,13 @@ const enTrans = {
                 you to create multiple thrift groups, managing memebers, calculate thrifte due dates etc while giving you an intuitive overview of you finances`,
             2: `Finance Tracker/Logger helps users track daily income, expenses and savings for different accounts and also outputs results via lists and charts`,
             3: `Real estate marketplace (PWA) aimed at connecting verified house owners and realtors to prospective buyers. It features
-            secure user authentication, image uploads, site customizations like preffered user fonts and dark mode,
+            secure user authentication, image uploads, site customizations like preferred user fonts and dark mode,
             house listings, custom home search, realtor verifications, subscriptions, listing recomendations, realtime chats, user notifications, emails, custom profile for real estate companies etc 
             `,
             4: `GTA V Card is a fun project displaying a simple gta v card with changing background images and audio`,
             5: `Administrator Portal for managing activities on the hulo application, it features user notification, realtime chats, roles, permissions,
              app customizations like theme, sending emails and user notifications, managing home listings and users etc`,
-            6: `CBT is an application serves apis for conducting Computer Based Assessments for students. 
+            6: `CBT is a backend application that serves apis for conducting Computer Based Assessments for students. 
                 Teachers/Examiner's can create examinations and grade students using the cbt apis.
                 It's features include create examinations, students registration for examinations,
                 auto and manual grading for specific test, instant results after exam completion, and

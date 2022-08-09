@@ -61,24 +61,6 @@ export default projects;
 
 // const projects = [
 //     {
-//         title: "Hulo",
-//         details:
-//             "Real estate marketplace (PWA) aimed at connecting verified house owners and realtor to prospective buyers. created with Nuxt Js, Laravel , Amazon S3",
-//         languages: [
-//             "JavaScript",
-//             "Vue Js",
-//             "Nuxt Js",
-//             "Php",
-//             "Laravel",
-//             "SQL",
-//             "AWS S3",
-//             "Node JS",
-//             "Express JS",
-//             "Redis",
-//             "Pusher",
-//         ],
-//     },
-//     {
 //         title: `Adriano's home`,
 //         details: "A portfolio, blog and mini ecommerce store ",
 //         languages: ["JavaScript", "Vue Js", "Php", "Laravel"],

@@ -31,7 +31,7 @@ const enTrans = {
         scroll_desc: "Scroll/Swipe horizontally to view more",
         projects: {
             1: `Thrift.io is an application that helps with collection and organization of thrifts (popularly known as AJO) amongst family and friends. Thrift.io allows
-                you to create multiple thrift groups, managing memebers, calculate thrifte due dates etc while giving you an intuitive overview of you finances`,
+                you to create multiple thrift groups, managing memebers, calculate thrift due dates etc while giving you an intuitive overview of you finances`,
             2: `Finance Tracker/Logger helps users track daily income, expenses and savings for different accounts and also outputs results via lists and charts`,
             3: `Real estate marketplace (PWA) aimed at connecting verified house owners and realtors to prospective buyers. It features
             secure user authentication, image uploads, site customizations like preferred user fonts and dark mode,

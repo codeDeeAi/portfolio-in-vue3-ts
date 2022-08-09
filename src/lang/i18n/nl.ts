@@ -24,12 +24,28 @@ const nlTrans = {
             description: "Omschrijving",
             tags: "tags",
             links: "links",
+            request_demo: "Privé, demo aanvragen",
+            cancel: "Annuleren"
         },
         scroll_desc: "Scroll/swipe horizontaal om meer te zien",
-        projects:{
+        projects: {
             1: `Thrift.io is een applicatie die helpt bij het verzamelen en organiseren van spaarzaamheid (in de volksmond bekend als AJO) onder familie en vrienden. Thrift.io staat toe
             u kunt meerdere spaargroepen maken, leden beheren, vervaldatums voor spaarzaamheid berekenen enz. terwijl u een handig overzicht krijgt van uw financiën`,
-            2: `Finance Tracker/Logger helpt gebruikers bij het bijhouden van dagelijkse inkomsten, uitgaven en besparingen voor verschillende accounts en geeft ook resultaten weer via lijsten en grafieken`,
+            2: `Finance Tracker/Logger helpt gebruikers bij het bijhouden van dagelijkse inkomsten, uitgaven en besparingen voor verschillende accounts en geeft ook resultaten weer via 
+            lijsten en grafieken`,
+            3: `Vastgoedmarktplaats (PWA) gericht op het verbinden van geverifieerde huiseigenaren en makelaars met potentiële kopers. Het beschikt over:
+            veilige gebruikersauthenticatie, uploads van afbeeldingen, site-aanpassingen zoals geprefereerde gebruikerslettertypen en donkere modus,
+            huisvermeldingen, aangepast zoeken naar huizen, verificaties van makelaars, abonnementen, aanbevelingen voor advertenties, realtime chats, gebruikersmeldingen, e-mails, aangepast profiel voor onroerendgoedbedrijven, enz. 
+            `,
+            4: `GTA V Card is een leuk project met een eenvoudige gta v-kaart met wisselende achtergrondafbeeldingen en audio`,
+            5: `Beheerdersportaal voor het beheren van activiteiten op de hulo-applicatie, het biedt gebruikersmeldingen, realtime chats, rollen, machtigingen,
+            app-aanpassingen zoals thema, e-mails en gebruikersmeldingen verzenden, huizenlijsten en gebruikers beheren, enz.`,
+            6: `CBT is een applicatie die api's dient voor het uitvoeren van computergebaseerde beoordelingen voor studenten.
+            Docenten/examinatoren kunnen examens maken en studenten beoordelen met behulp van de cbt apis.
+            De functies zijn onder meer examens maken, studentenregistratie voor examens,
+            automatische en handmatige beoordeling voor een specifieke test, onmiddellijke resultaten na voltooiing van het examen, en
+            Prestatiegrafieken van studenten.`,
+            7: `Issue/Bug Tracker voor het opnemen van bugs/defecten kwaliteitsborgingstesters. Teams beheren, taken toewijzen en exporteren naar Excel-blad`,
         }
     }
 };

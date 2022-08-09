@@ -2,10 +2,20 @@
 
 const projects = [
     {
+        id: 3,
+        title: "Hulo",
+        languages: ["PWA", "JavaScript", "Vue Js", "Nuxt Js", "Php", "Laravel", "SQL", "AWS S3", "Node JS", "Express JS", "Redis", "Pusher", "REST"],
+        image: "hulo.png",
+    },
+    {
+        id: 5,
+        title: "Hulo (Admin Dashboard)",
+        languages: ["JavaScript", "Vue Js", "TypeScript", "AWS S3", "Pusher", "APIs"],
+        image: "hulo-admin.png",
+    },
+    {
         id: 1,
         title: "Thrift.io",
-        description:
-            "Thrift.io is an application that helps with collection and organization of thrifts (popularly known as AJO) amongst family and friends",
         languages: ["JavaScript", "Vue Js", "Php", "Laravel", "SQL"],
         image: "thrift.png",
         git: "https://github.com/codeDeeAi/thrift.io",
@@ -14,12 +24,33 @@ const projects = [
     {
         id: 2,
         title: "Finance Tracker/Logger",
-        description:
-            "Finance Tracker/Logger helps users track daily income, expenses and saving for different accounts and also outputs results via lists and charts",
         languages: ["JavaScript", "Vue Js", "Php", "Laravel", "SQL"],
         image: "financelogger.png",
         git: "https://github.com/codeDeeAi/financeloggerclient",
         web: "https://finance-logger-client.herokuapp.com/",
+    },
+    {
+        id: 6,
+        title: "CBT",
+        languages: ["Laravel", "PHP", "REST"],
+        image: "cbt.png",
+        git: "https://github.com/codeDeeAi/CBT_be_apis",
+    },
+    {
+        id: 4,
+        title: "GTA V Card",
+        languages: ["HTML", "CSS", "Tailwind", "JavaScript"],
+        image: "gta.png",
+        git: "https://github.com/codeDeeAi/gta_v",
+        web: "https://codedeeai.github.io/gta_v/",
+    },
+    {
+        id: 7,
+        title: "Issue/Bug Tracker",
+        languages: ["JavaScript", "Vue Js", "Php", "Laravel"],
+        image: "bugtracker.png",
+        git: "https://github.com/codeDeeAi/issue_tracker.git",
+        web: "http://eagle-bug-tracker.herokuapp.com/",
     },
 ];
 
@@ -30,16 +61,7 @@ export default projects;
 
 // const projects = [
 //     {
-//         title: "Finance Tracker/Logger",
-//         details:
-//             "Finance Tracker/Logger helps users track daily income, expenses and saving for different accounts and also outputs results via lists and charts",
-//         languages: ["JavaScript", "Vue Js", "Php", "Laravel"],
-//         git: "https://github.com/codeDeeAi/financeloggerclient",
-//         web: "https://finance-logger-client.herokuapp.com/",
-//         video: "",
-//     },
-//     {
-//         title: "Hulo (Realtor's portal)",
+//         title: "Hulo",
 //         details:
 //             "Real estate marketplace (PWA) aimed at connecting verified house owners and realtor to prospective buyers. created with Nuxt Js, Laravel , Amazon S3",
 //         languages: [
@@ -50,36 +72,11 @@ export default projects;
 //             "Laravel",
 //             "SQL",
 //             "AWS S3",
+//             "Node JS",
+//             "Express JS",
+//             "Redis",
+//             "Pusher",
 //         ],
-//         git: "",
-//         web: "http://hulo-2.herokuapp.com/",
-//         video: "",
-//     },
-//     {
-//         title: "Hulo (Buyer)",
-//         details:
-//             "Real estate marketplace (PWA) aimed at connecting verified house owners and realtor to prospective buyers. created with Nuxt Js, Laravel , Amazon S3",
-//         languages: [
-//             "JavaScript",
-//             "Vue Js",
-//             "Nuxt Js",
-//             "Php",
-//             "Laravel",
-//             "SQL",
-//             "AWS S3",
-//         ],
-//         git: "",
-//         web: "http://hulo-1.herokuapp.com/",
-//         video: "",
-//     },
-//     {
-//         title: "Issue/Bug Tracker",
-//         details:
-//             "Issue/Bug Tracker for recording bugs/defects quality assurance testers. Manage Teams, Assign Tasks & Export to excel sheet",
-//         languages: ["JavaScript", "Vue Js", "Php", "Laravel"],
-//         git: "https://github.com/codeDeeAi/issue_tracker.git",
-//         web: "",
-//         video: "/videos/bugtracker.mp4",
 //     },
 //     {
 //         title: `Adriano's home`,

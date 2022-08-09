@@ -71,6 +71,8 @@ const props = defineProps({
                                                         class="btn-primary border border-black dark:border-white px-4 py-2 text-center">Web</a>
                                                     <a v-if="data?.git" :href="data?.git" target="_blank"
                                                         class="btn-primary border border-black dark:border-white px-4 py-2 text-center">GitHub</a>
+                                                    <button v-if="!data?.git && !data?.web" type="button" target="_blank"
+                                                        class="btn-primary border border-black dark:border-white px-4 py-2 text-center capitalize">{{ $t("projects_section.controls.request_demo") }}</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -79,8 +81,8 @@ const props = defineProps({
                             </div>
                             <div class="px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                                 <button type="button"
-                                    class="mt-3 w-full inline-flex justify-center btn-primary border shadow-sm px-4 py-2 text-base font-medium sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm"
-                                    @click="$emit('closeModal')" ref="cancelButtonRef">Cancel</button>
+                                    class="mt-3 w-full inline-flex justify-center btn-primary border shadow-sm px-4 py-2 text-base font-medium sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm capitalize"
+                                    @click="$emit('closeModal')" ref="cancelButtonRef">{{ $t("projects_section.controls.cancel") }}</button>
                             </div>
                         </DialogPanel>
                     </TransitionChild>

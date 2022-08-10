@@ -2,18 +2,6 @@
 
 const projects = [
     {
-        id: 3,
-        title: "Hulo",
-        languages: ["PWA", "JavaScript", "Vue Js", "Nuxt Js", "Php", "Laravel", "SQL", "AWS S3", "Node JS", "Express JS", "Redis", "Pusher", "REST"],
-        image: "hulo.png",
-    },
-    {
-        id: 5,
-        title: "Hulo (Admin Dashboard)",
-        languages: ["JavaScript", "Vue Js", "TypeScript", "AWS S3", "Pusher", "APIs"],
-        image: "hulo-admin.png",
-    },
-    {
         id: 1,
         title: "Thrift.io",
         languages: ["JavaScript", "Vue Js", "Php", "Laravel", "SQL"],
@@ -35,6 +23,19 @@ const projects = [
         languages: ["Laravel", "PHP", "REST"],
         image: "cbt.png",
         git: "https://github.com/codeDeeAi/CBT_be_apis",
+    },
+    
+    {
+        id: 3,
+        title: "Hulo",
+        languages: ["PWA", "JavaScript", "Vue Js", "Nuxt Js", "Php", "Laravel", "SQL", "AWS S3", "Node JS", "Express JS", "Redis", "Pusher", "REST"],
+        image: "hulo.png",
+    },
+    {
+        id: 5,
+        title: "Hulo (Admin Dashboard)",
+        languages: ["JavaScript", "Vue Js", "TypeScript", "AWS S3", "Pusher", "APIs"],
+        image: "hulo-admin.png",
     },
     {
         id: 4,

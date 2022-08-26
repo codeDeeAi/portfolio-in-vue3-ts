@@ -4,7 +4,8 @@ const enTrans = {
             home: "home",
             projects: "projects",
             tools: "tools",
-            "about me": "about me"
+            "about me": "about me",
+            "contact me": "contact me",
         },
     },
     hero_section: {
@@ -16,7 +17,12 @@ const enTrans = {
         I am a fast learner with a keen interest in solving problems, I have a great passion for building modern, fast, simple, efficient, and scalable web solutions.
         During my spare time, I love playing video games, spending time with my family or walking my dog.`
     },
-
+    contact_section:{
+        name: 'name',
+        email: 'e-mail',
+        message: 'message',
+        send_message: 'send message',
+    },
     projects_section: {
         controls: {
             next: "Next",

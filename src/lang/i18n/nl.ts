@@ -4,7 +4,8 @@ const nlTrans = {
             home: "huis",
             projects: "projecten",
             tools: "hulpmiddelen",
-            "about me": "over mij"
+            "about me": "over mij",
+            "contact me": "contact mij",
         },
     },
     hero_section: {
@@ -15,6 +16,12 @@ const nlTrans = {
         desc: `Mijn naam is Adeola Bada. Ik heb een achtergrond in Civiele Techniek. Mijn interesse in computers heeft me ertoe gebracht een carrière in softwareontwikkeling na te streven.
         Ik ben een snelle leerling met een grote interesse in het oplossen van problemen, ik heb een grote passie voor het bouwen van moderne, snelle, eenvoudige, efficiënte en schaalbare weboplossingen.
         In mijn vrije tijd speel ik graag videogames, breng ik tijd door met mijn gezin of wandel ik graag met mijn hond.`
+    },
+    contact_section: {
+        name: 'naam',
+        email: 'e-mail',
+        message: 'bericht',
+        send_message: 'bericht versturen',
     },
     projects_section: {
         controls: {

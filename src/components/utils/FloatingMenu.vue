@@ -64,6 +64,7 @@ const menuItems = ref<MenuItem[]>([
     { name: 'projects', route: 'projects' },
     { name: 'tools', route: 'tools' },
     { name: 'about me', route: 'about' },
+    { name: 'contact me', route: 'contact' },
 ]);
 
 // Methods

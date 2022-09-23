@@ -5,7 +5,7 @@
         bg-white dark:bg-black">
 
             <ul class="list-none capitalize mr-2 space-y-2">
-                <li v-for="(item, index) in menuItems" :key="index" class="flex transition-all ease-in-out justify-end hover:border-b-2 md:hover:border-b-4 border-black dark:border-white
+                <li v-for="(item, index) in menuItems" :key="index" class="flex transition-all ease-in-out justify-end hover:underline decoration-4 underline-offset-4 decoration-black dark:decoration-white
                 " :class="{ 'animate__animated animate__slideInUp': showTray }">
                     <router-link :to="{ name: item.route }" class="font-semibold text-2xl capitalize">
 
@@ -67,6 +67,20 @@ const menuItems = ref<MenuItem[]>([
     { name: 'contact me', route: 'contact' },
 ]);
 
+
 // Methods
+/**
+ * Closes the menu popup
+ * @returns {void}
+ */
+ const closePopup = (): void => {
+  if(showTray.value) showTray.value = false;
+};
+
+// Exposed Methods
+defineExpose({
+    closePopup,
+});
+
 
 </script>

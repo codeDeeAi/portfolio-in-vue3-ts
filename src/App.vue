@@ -8,6 +8,10 @@ import { usePreferencesStore } from './stores/preferences'
 // Data
 const isLoaded = ref<Boolean>(false);
 
+
+  // Children Refs
+  const floatingMenu = ref();
+
 // Watcher
 watch(isLoaded, (value) => {
   usePreferencesStore().setPreloaderState(value);
@@ -22,6 +26,13 @@ const toggleLoader = (): void => {
   window.onload = function () {
     return isLoaded.value = true;
   };
+};
+/**
+ * Closes the menu popup
+ * @returns {void}
+ */
+const closePopup = (): void => {
+  floatingMenu.value.closePopup();
 };
 
 /**
@@ -51,12 +62,12 @@ loadCurrentMode();
     <!-- Loader -->
     <PreLoader v-if="!isLoaded" />
     <!-- Loader Ends -->
-    <router-view v-slot="{ Component }" class="h-full w-full scroll-smooth container mx-auto px-4">
+    <router-view v-slot="{ Component }" class="h-full w-full scroll-smooth mx-auto px-4" @click="closePopup()">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
-    <FloatingMenu class="absolute bottom-10 sm:bottom-6 md:bottom-4 right-9 sm:right-3 md:right-4 lg:right-5 z-40" />
+    <FloatingMenu ref="floatingMenu" class="absolute bottom-10 sm:bottom-6 md:bottom-4 right-9 sm:right-3 md:right-4 lg:right-5 z-40" />
   </div>
 </template>
 

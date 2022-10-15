@@ -1,7 +1,8 @@
 <template>
     <section>
         <!--CSS Spinner-->
-        <div class="spinner-wrapper bg-stone-800">
+        <div class="spinner-wrapper"
+            :class="{'bg-black': usePreferencesStore().getDarkMode, 'bg-white': !usePreferencesStore().getDarkMode}">
             <div class="spinner">
                 <div class="sk-folding-cube">
                     <div class="sk-cube1 sk-cube"></div>
@@ -13,6 +14,10 @@
         </div>
     </section>
 </template>
+
+<script setup lang="ts">
+import { usePreferencesStore } from '@/stores/preferences';
+</script>
 
 <style scoped>
 .spinner-wrapper {

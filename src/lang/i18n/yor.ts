@@ -17,7 +17,7 @@ const yorTrans = {
         Mo jẹ akẹẹkọ ti o yara pẹlu iwulo to jinlẹ si awọn iṣoro, Mo ni itara nla fun kikọ igbalode, iyara, rọrun, daradara, ati awọn ojutu oju opo wẹẹbu iwọn.
         Ni akoko apoju mi, Mo nifẹ ṣiṣe awọn ere fidio, lilo akoko pẹlu ẹbi mi tabi rin aja mi.`
     },
-    contact_section:{
+    contact_section: {
         name: 'oruko',
         email: 'imeeli',
         message: 'ifiranṣẹ',
@@ -53,6 +53,34 @@ const yorTrans = {
             auto ati Afowoyi igbelewọn fun pato igbeyewo, ese esi lẹhin ti kẹhìn Ipari, ati
             Akeko išẹ shatti.`,
             7: `Oro/Olutọpa kokoro fun gbigbasilẹ awọn idun/aṣiṣe awọn oluyẹwo idaniloju didara. Ṣakoso awọn ẹgbẹ, Fi Awọn iṣẹ-ṣiṣe ranṣẹ & Firanṣẹ si okeere si dì tayo`,
+
+            8: "Òrò ìròlè tó fún ọwọ̀ ojú ìran API tọlẹ́lẹ́ (https://sv443.net/jokeapi/v2/) ti scripiti pẹlu Vue Js àti Tailwind Css",
+
+            9: "Àpápọ̀ wèbì ìbímọ̀lẹ̀ bílógù pẹ̀lú Laravel àti Vue Js, ọpọ̀lọpọ̀ ìràn ìṣeṣe ìgbàgbọ́ àti ìsọdàn tó lè wà, tó jẹ́ àní látòun àdìran. Ẹ jẹ́ kí àní fúnra rè láti jẹ́ kóòrùn yúnifọ̀rmù túnṣe láàárín ogbeni. Nígbà tí àwọn àtúnníranṣẹ̀ àṣayàn àti ìkọ̀wàjú tùnṣe ní akọ́kọ́ èlò ẹni.",
+
+            10: "Òrò àkọ́kọ́ àwọn oṣu Twitter pẹ̀lú HTML, CSS, Bootstrap àti JavaScript tó jẹ́ ànílẹ̀kàn.",
+
+            11: `Précis jẹ́ àwọn àpótí pípè fún PHP tó wà lára ìwò. Àwọn àpótí yii ni àwọn ìsọdàn bí ìsọdàn
+                Ìmọjú ìsọdàn tó ṣènú,
+                Ìyíþayọò,
+                Ìtẹju ìbí,
+                Ìwò àti Ìpò,
+                Àwọn ìbó,
+                Ìgbàgbọ́ àràmọ́kò,
+                Àwọn ìpàkò,
+                Ìpòjú àràmọ́kò,
+                Àwọn ìṣèlè lórúkọ,
+                Àwọn ìpòjú.`,
+
+            12: `Àpótí ọwọ́ bánkì jẹ́ ọkàn ìkẹ́yìn pẹ̀lú PHP 8+, ìkẹ́yìn sákèjá sílẹ̀. Àwọn àpótí yii ni àwọn ìsọdàn bí ìsọdàn
+                Sílẹ̀ ìwò ìwòrà,
+                Tíẹ́ làti ní lórúkọ àwọn ìwòrà,
+                Tíẹ́ tàbí túnṣe lórúkọ àwọn ìwòrà.`,
+
+            13: `Yi jẹ́ àpótí àwọn ọjọ́ àpẹ̀rò òdò àti àwọn àìtọkè àṣàní lórúkọ Node js àti Express Js, ó ní àwọn orílẹ̀-èdè gbogbo àwọn orílẹ̀. Àwọn àpótí yii ni àwọn ìsọdàn bí ìsọdàn
+                Àwọn API tó ẹ̀yẹ àti tó yíyípò,
+                Àwọn API ìṣèlè,
+                Rírù jẹ́ ọkàn àti òlè dájú.`,
         }
     }
 };

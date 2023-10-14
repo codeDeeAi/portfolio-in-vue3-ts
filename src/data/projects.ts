@@ -1,6 +1,29 @@
 
-
 const projects = [
+    {
+        id: 11,
+        title: "Précis",
+        languages: ["PHP", "Composer", "Pest", "Phinx"],
+        image: "precis.png",
+        git: "https://github.com/codeDeeAi/Precis",
+        web: "",
+    },
+    {
+        id: 12,
+        title: "Wafi",
+        languages: ["PHP", "Composer", "CLI"],
+        image: "wafi.png",
+        git: "https://github.com/codeDeeAi/wafi",
+        web: "",
+    },
+    {
+        id: 13,
+        title: "Countries and States API",
+        languages: ["JavaScript", "Node JS", "API"],
+        image: "countries-states.png",
+        git: "https://github.com/codeDeeAi/countries_and_states_api",
+        web: "https://countries-and-states.onrender.com/api/v1",
+    },
     {
         id: 1,
         title: "Thrift.io",
@@ -24,7 +47,7 @@ const projects = [
         image: "cbt.png",
         git: "https://github.com/codeDeeAi/CBT_be_apis",
     },
-    
+
     {
         id: 3,
         title: "Hulo",
@@ -53,11 +76,40 @@ const projects = [
         git: "https://github.com/codeDeeAi/issue_tracker.git",
         web: "http://eagle-bug-tracker.herokuapp.com/",
     },
+    {
+        id: 8,
+        title: "Get Jokes Page",
+        image: "bugtracker.png",
+        details:
+            "A simple webpage with  HTML, CSS, Tailwind Css, JavaScript, and Vue Js that gets jokes from an open source API based on the user's preferred filter",
+        languages: ["JavaScript", "Vue Js"],
+        git: "https://github.com/codeDeeAi/get_jokes_from_open_source_api.git",
+        web: "",
+    },
+    {
+        id: 9,
+        title: "LaraBlog",
+        image: "larablog.png",
+        details:
+            "A Blog web app with Laravel and Vue Js, it has some very important and unique features, most importantly it can be fully customized by the administrator. It also features user roles and permission at the admin panel",
+        languages: ["Laravel 7", "Vue Js", "Sql"],
+        git: "https://github.com/codeDeeAi/Larablog.git",
+        web: "",
+        video: "/videos/larablog.mp4",
+    },
+    {
+        id: 10,
+        title: "Twitter",
+        image: "twitter.png",
+        details:
+            "A simple recreation of twitter's landing page with just HTML, CSS, bootstrap and Simple JavaScript",
+        languages: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+        git: "https://github.com/codeDeeAi/Twitter.git",
+        web: "https://xenodochial-curran-dc0dce.netlify.app",
+    },
 ];
 
-
 export default projects;
-
 
 
 // const projects = [
@@ -77,13 +129,7 @@ export default projects;
 //         web: "",
 //     },
 //     {
-//         title: "Get Jokes Page",
-//         details:
-//             "A simple webpage with  HTML, CSS, Tailwind Css, JavaScript, and Vue Js that gets jokes from an open source API based on the user's preferred filter",
-//         languages: ["JavaScript", "Vue Js"],
-//         git: "https://github.com/codeDeeAi/get_jokes_from_open_source_api.git",
-//         web: "https://nifty-varahamihira-b5b934.netlify.app",
-//     },
+
 //     {
 //         title: "OneHourToDo Application",
 //         details:
@@ -92,15 +138,6 @@ export default projects;
 //         git: "https://github.com/codeDeeAi/ToDoApp.git",
 //         web: "",
 //         video: "/videos/todo.mp4",
-//     },
-//     {
-//         title: "LaraBlog",
-//         details:
-//             "      A Blog web app with Laravel and Vue Js, it has some very important and unique features, most importantly it can be fully customized by the administrator. It also features user roles and permission at the admin panel",
-//         languages: ["Laravel 7", "Vue Js", "Sql"],
-//         git: "https://github.com/codeDeeAi/Larablog.git",
-//         web: "",
-//         video: "/videos/larablog.mp4",
 //     },
 //     {
 //         title: "TFLM",

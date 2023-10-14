@@ -52,6 +52,30 @@ const enTrans = {
                 auto and manual grading for specific test, instant results after exam completion, and
                 Student performance charts.`,
             7: `Issue/Bug Tracker for recording bugs/defects quality assurance testers. Manage Teams, Assign Tasks & Export to excel sheet`,
+            8: `A simple page that shows different jokes based on an open source API (https://sv443.net/jokeapi/v2/) written with Vue Js and Tailwind Css`,
+            9: `A Blog web app with Laravel and Vue Js, it has some very important and unique features, most importantly it can be fully customized by the administrator. It also features user roles and permission at the admin panel`,
+            10: `A simple recreation of twitter's landing page with just HTML, CSS, bootstrap and Simple JavaScript`,
+            11: `Précis is a custom php framework created to undestand how other php frameworks like Laravel, Symphony etc works under the hood. This framework contains features such as
+                Custom Routing, 
+                Composer, 
+                Controllers, 
+                Views and Layouts, 
+                Models,
+                Migrations,
+                Validations,
+                Simple Active Records,
+                Middlewares,
+                Events etc`,
+            12: `Bank transactions is a CLI application written in PHP 8+, backwards compatible.                
+                It's features includes
+                creating user accounts,
+                Deposit Credits to user accounts,
+                Transfer Credits between user accounts`,
+            13: `This is an API application created with Node js and Express Js, it displays all countries and states. It features:
+
+                Simple yet powerful APIs,
+                Interactive APIs,
+                Fast and easy to use.`
         }
     }
 };

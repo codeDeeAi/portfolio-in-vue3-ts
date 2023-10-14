@@ -53,6 +53,30 @@ const nlTrans = {
             automatische en handmatige beoordeling voor een specifieke test, onmiddellijke resultaten na voltooiing van het examen, en
             Prestatiegrafieken van studenten.`,
             7: `Issue/Bug Tracker voor het opnemen van bugs/defecten kwaliteitsborgingstesters. Teams beheren, taken toewijzen en exporteren naar Excel-blad`,
+            8: `Een eenvoudige pagina die verschillende grappen laat zien op basis van een open source API (https://sv443.net/jokeapi/v2/), geschreven in Vue Js en Tailwind Css.`,
+            9: `Een Blog webtoepassing met Laravel en Vue Js, met enkele zeer belangrijke en unieke functies, het belangrijkste is dat het volledig aanpasbaar is door de beheerder. Het bevat ook gebruikersrollen en toestemmingen in het beheerderspaneel.`,
+            10: `Een eenvoudige hercreatie van de landingspagina van Twitter met alleen HTML, CSS, bootstrap en eenvoudige JavaScript.`,
+            11: `Précis is een op maat gemaakt PHP-framework dat is gemaakt om te begrijpen hoe andere PHP-frameworks zoals Laravel, Symfony, enz. onder de motorkap werken. Dit framework bevat functies zoals
+                Aangepaste routing,
+                Composer,
+                Controllers,
+                Weergaven en lay-outs,
+                Modellen,
+                Migraties,
+                Validaties,
+                Eenvoudige actieve gegevens,
+                Middelware,
+                Gebeurtenissen, enzovoort.`,
+            12: `Banktransacties is een CLI-toepassing geschreven in PHP 8+ en is achterwaarts compatibel. 
+                De functies omvatten
+                het aanmaken van gebruikersrekeningen,
+                Credits storten op gebruikersrekeningen,
+                Credits overboeken tussen gebruikersrekeningen.`,
+            13: `Dit is een API-toepassing gemaakt met Node js en Express Js, die alle landen en staten weergeeft. Het bevat:
+                Eenvoudige maar krachtige API's,
+                Interactieve API's,
+                Snel en gemakkelijk te gebruiken.`
+
         }
     }
 };

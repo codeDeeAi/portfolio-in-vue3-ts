@@ -41,8 +41,8 @@ const props = defineProps({
                                             {{ data?.title }} </DialogTitle>
                                         <div class="mt-2 overflow-auto">
                                             <!-- Image -->
-                                            <div class="h-60">
-                                                <img class="rounded-lg shadow-xl bg-white"
+                                            <div class="h-60 !w-full">
+                                                <img class="rounded-lg shadow-xl bg-white !h-60 !w-full"
                                                     :src="`/images/projects/${data?.image}`">
                                             </div>
 

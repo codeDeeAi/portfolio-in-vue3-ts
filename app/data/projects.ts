@@ -118,17 +118,39 @@ export const projects: Project[] = [
     company: 'Silky Systems',
   },
 
-  // ─── WIP ─────────────────────────────────────────────────────────────────
+  // ─── PRODUCTION (CLIENT PROJECTS) ────────────────────────────────────────
   {
     id: 17,
     title: 'Flowtali',
     description:
-      'Invoice and letterhead generation tool currently in development. Streamlines professional document creation for freelancers and small businesses.',
-    stack: ['Node.js', 'TypeScript', 'REST APIs'],
-    image: '/images/projects/precis.png',
+      'Full SaaS platform for freelancers and self-employed professionals. Covers the complete admin workflow — invoices, receipts, projects, and branded letterheads — with multi-tenant architecture and subscription management.',
+    stack: ['PHP', 'Laravel', 'Vue.js', 'MySQL', 'REST APIs'],
+    image: thumb('https://www.flowtali.com/'),
+    demo: 'https://www.flowtali.com/',
     featured: false,
-    category: 'backend',
-    wip: true,
+    category: 'production',
+    highlights: [
+      'Invoice & receipt generation for freelancers',
+      'Project management and letterhead creation',
+      'End-to-end admin workflow in one platform',
+    ],
+  },
+  {
+    id: 19,
+    title: 'Olayinka Ojo',
+    description:
+      'Professional portfolio and service hub for a multidisciplinary expert in environmental law, ESG advisory, leadership coaching, and pastoral ministry. Built for a client operating across Central Europe, Africa, and North America.',
+    stack: ['Nuxt.js', 'Vue.js', 'TypeScript'],
+    image: thumb('https://www.olayinkaojo.com/'),
+    demo: 'https://www.olayinkaojo.com/',
+    featured: false,
+    category: 'production',
+    company: 'Evnoia Group',
+    highlights: [
+      'Multi-disciplinary professional presence across law, faith & leadership',
+      'Integrated consultation scheduling and book sales',
+      'Multi-location operations: Czech Republic, Nigeria, Kenya & Zambia',
+    ],
   },
 
   // ─── OPEN SOURCE / PERSONAL ───────────────────────────────────────────────

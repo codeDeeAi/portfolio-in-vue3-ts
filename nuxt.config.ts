@@ -15,7 +15,6 @@ export default defineNuxtConfig({
 
   modules: [
     '@pinia/nuxt',
-    '@nuxt/image',
     '@vueuse/nuxt',
   ],
 
@@ -71,11 +70,6 @@ export default defineNuxtConfig({
         },
       ],
     },
-  },
-
-  image: {
-    quality: 85,
-    formats: ['webp', 'png'],
   },
 
   nitro: {

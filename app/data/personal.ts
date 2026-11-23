@@ -1,36 +1,45 @@
 export const personal = {
   name: 'Adeola Bada',
   title: 'Senior Backend Engineer',
-  tagline: 'Building the backend infrastructure that powers products at scale.',
-  bio: `I'm a Senior Backend Engineer with 5+ years of experience designing and shipping the systems behind products — from real-time payment platforms and marketplace backends to custom PHP frameworks and distributed APIs. My background in Civil Engineering gives me a structural approach to software: I think in systems, constraints, and load long before I think in code.
-
-I've led backend teams, driven architecture decisions, and delivered measurable results: 25% increases in user engagement, 40% reductions in payout processing time, and 30% drops in payment fraud. Currently learning Rust and pursuing an MSc in Information Technology.`,
-  location: 'Nigeria',
+  status: 'Lead Engineer at Celebut · open to select contract work',
+  locationLine: 'Nigeria · Remote · UTC+1',
+  // The first phrase is what renders on the server and what screen readers hear.
+  heroPhrases: [
+    'payments, wallets and APIs',
+    'AI assistants that ask first',
+    'ledgers and payout systems',
+    'multi-tenant SaaS backends',
+  ],
+  lede:
+    "Senior Backend Engineer and Team Lead with 6+ years in Go, Laravel and Node.js. I've built ledgers, payout systems, shipping integrations and AI assistants for marketplaces in Nigeria, the US and Europe, with GDPR and NDPA compliance designed in.",
   email: 'dunsin.bada@gmail.com',
   website: 'https://www.adeolabada.com',
   resumeUrl:
     'https://docs.google.com/document/d/1okaqsmiuCgyqf4zxqJ1wNJG4i71-njDJLHzOD_70N4E/edit?usp=sharing',
   photo: '/images/1-rb.png',
+  education: 'MSc Information Technology · Miva Open University (finishing)',
+  contact: {
+    title: 'Need a backend that holds the load?',
+    text: "I take on a few backend contracts a year and I'm happy to talk about lead roles. I reply within two working days.",
+  },
   socials: [
-    {
-      name: 'GitHub',
-      url: 'https://github.com/codeDeeAi',
-      icon: 'github',
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/adeola-bada-aiism-a51174124/',
-      icon: 'linkedin',
-    },
-    {
-      name: 'Twitter / X',
-      url: 'https://twitter.com/AdeolaBada1',
-      icon: 'twitter',
-    },
-  ],
-  stats: [
-    { value: '5+', label: 'Years Experience' },
-    { value: '3', label: 'Continents' },
-    { value: '10+', label: 'Products Shipped' },
+    { name: 'GitHub', url: 'https://github.com/codeDeeAi' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/adeola-bada-aiism-a51174124/' },
+    { name: 'X', url: 'https://twitter.com/AdeolaBada1' },
   ],
 }
+
+export interface Result {
+  value: string
+  label: string
+  source: string
+  highlight?: boolean
+}
+
+export const results: Result[] = [
+  { value: '−40%', label: 'payout processing time', source: 'Weeshr · payouts', highlight: true },
+  { value: '−30%', label: 'payment fraud incidents', source: 'Weeshr · payments', highlight: true },
+  { value: '1,369', label: 'passing tests on an API I wrote', source: 'NxtEvent · Laravel' },
+  { value: '7', label: 'shipping carriers integrated', source: 'Kouture Konect' },
+  { value: 'L8→13', label: 'live Laravel upgrade, no rewrite', source: 'Kouture Konect' },
+]

@@ -1,12 +1,9 @@
+const description =
+  'Senior Backend Engineer and Team Lead with 6+ years building payments, wallets, ledgers and AI assistants in Go, Laravel and Node.js.'
+
 export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
-  },
-
-  runtimeConfig: {
-    public: {
-      formspreeId: process.env.NUXT_PUBLIC_FORMSPREE_ID ?? '',
-    },
   },
 
   components: [
@@ -14,7 +11,6 @@ export default defineNuxtConfig({
   ],
 
   modules: [
-    '@pinia/nuxt',
     '@vueuse/nuxt',
   ],
 
@@ -33,30 +29,16 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        {
-          name: 'description',
-          content:
-            'Senior Backend Engineer with 5+ years building scalable APIs, distributed systems, and high-performance backend infrastructure. Laravel · Node.js · TypeScript · Redis.',
-        },
+        { name: 'description', content: description },
         { name: 'author', content: 'Adeola Bada' },
-        { name: 'keywords', content: 'Adeola Bada, Senior Backend Engineer, Laravel, Node.js, TypeScript, PHP, Redis, API, Nigeria' },
-        { property: 'og:title', content: 'Adeola Bada | Senior Backend Engineer' },
         {
-          property: 'og:description',
-          content: 'Senior Backend Engineer with 5+ years building scalable APIs, distributed systems, and high-performance backend infrastructure.',
+          name: 'keywords',
+          content: 'Adeola Bada, Senior Backend Engineer, Lead Engineer, Go, Golang, Laravel, Node.js, TypeScript, PHP, Vue, payments, wallets, API, Nigeria',
         },
+        { name: 'color-scheme', content: 'light dark' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://www.adeolabada.com' },
-        { property: 'og:image', content: 'https://www.adeolabada.com/images/1-rb.png' },
-        { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@AdeolaBada1' },
         { name: 'twitter:creator', content: '@AdeolaBada1' },
-        { name: 'twitter:title', content: 'Adeola Bada | Senior Backend Engineer' },
-        {
-          name: 'twitter:description',
-          content: 'Senior Backend Engineer with 5+ years building scalable APIs and distributed systems.',
-        },
-        { name: 'twitter:image', content: 'https://www.adeolabada.com/images/1-rb.png' },
       ],
       link: [
         { rel: 'icon', type: 'image/png', href: '/images/1-rb.png' },
@@ -66,7 +48,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap',
+          href: 'https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap',
         },
       ],
     },

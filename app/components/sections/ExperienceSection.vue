@@ -1,26 +1,29 @@
 <script setup lang="ts">
-import { usePreferencesStore } from '~/stores/preferences'
 import { experiences } from '~/data/experience'
-
-const store = usePreferencesStore()
+import { speakingEngagements } from '~/data/speaking'
 </script>
 
 <template>
-  <section id="experience" class="py-20 md:py-28">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6">
-      <SectionHeading
-        title="Experience"
-        subtitle="5+ years across 3 continents, from intern to team lead"
-      />
-
-      <div class="relative">
-        <TimelineItem
-          v-for="(exp, index) in experiences"
-          :key="exp.id"
-          :experience="exp"
-          :isLast="index === experiences.length - 1"
-        />
-      </div>
+  <section id="experience" class="block" aria-labelledby="h-exp">
+    <SectionHead id="h-exp" label="Experience" title="Where I've worked" />
+    <div class="tbl">
+      <table>
+        <thead>
+          <tr><th>When</th><th>Company</th><th>Role</th><th>Where</th></tr>
+        </thead>
+        <tbody>
+          <tr v-for="e in experiences" :key="e.company + e.period">
+            <td class="when">{{ e.period }}</td>
+            <td><b>{{ e.company }}</b><div v-if="e.note" class="sub">{{ e.note }}</div></td>
+            <td>{{ e.role }}</td>
+            <td class="sub">{{ e.location }}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
+    <p v-for="talk in speakingEngagements" :key="talk.id" class="sub">
+      Speaking: "{{ talk.topic }}", {{ talk.organisation }}, {{ talk.location.split(',')[0] }}, {{ talk.date }}.
+      <ExternalLink v-if="talk.recordingUrl" :href="talk.recordingUrl">Recording</ExternalLink>
+    </p>
   </section>
 </template>

@@ -1,281 +1,95 @@
-export interface Project {
-  id: number
-  title: string
-  description: string
+export interface Product {
+  name: string
+  status: 'live' | 'beta'
+  statusLabel: string
+  summary: string
+  features: string[]
   stack: string[]
-  image: string
-  github?: string
-  demo?: string
-  featured: boolean
-  category: 'backend' | 'fullstack' | 'frontend' | 'cli' | 'framework' | 'production'
-  highlights?: string[]
-  wip?: boolean
-  company?: string
+  url: string
+  urlLabel: string
+  footnote: string
 }
 
-const thumb = (url: string) =>
-  `https://api.microlink.io/?url=${encodeURIComponent(url)}&screenshot=true&meta=false&embed=screenshot.url`
+export const productsIntro =
+  "Flowtali is my personal product, and Ruvian is the first product from my studio, Novenza. I'm the only engineer on both, from schema to deploy."
 
-export const projects: Project[] = [
-  // ─── FEATURED — MOST RECENT PRODUCTION ────────────────────────────────────
+export const products: Product[] = [
   {
-    id: 15,
-    title: 'NxtEvent Platform',
-    description:
-      'Modern event technology platform that unites planners, clients, vendors, and guests in one shared space. Leading backend architecture, API development, and team operations as contract Team Lead.',
-    stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'REST APIs', 'Docker'],
-    image: thumb('https://www.thenxtevnt.com/'),
-    demo: 'https://www.thenxtevnt.com/',
-    featured: true,
-    category: 'production',
-    company: 'NxtEvent',
-    highlights: [
-      'Led full backend architecture from ground up',
-      'Overseeing API design, deployment & team workflows',
+    name: 'Flowtali',
+    status: 'live',
+    statusLabel: 'Live',
+    summary: 'Invoices, receipts, branded letterheads and project tracking for freelancers and small teams.',
+    features: [
+      'Workspaces with team invites and custom roles',
+      '"Pay online" links on invoices, with receipts issued automatically',
+      'Subscriptions in NGN and USD, with trials and renewal reminders',
+      'An AI assistant that uses your own API key and confirms before every change',
+      'API keys and an embeddable SDK. Available in four languages.',
     ],
+    stack: ['Laravel 13', 'Vue 3', 'PWA', 'Docker'],
+    url: 'https://www.flowtali.com/',
+    urlLabel: 'flowtali.com',
+    footnote: 'Personal product · since Apr 2026',
   },
   {
-    id: 16,
-    title: 'Kouture Konect',
-    description:
-      'Global fashion tech platform facilitating custom design connections. Migrated the backend from Laravel 8 to Laravel 11 and maintain the production API infrastructure supporting web and mobile clients.',
-    stack: ['PHP', 'Laravel', 'Node.js', 'TypeScript', 'MySQL', 'REST APIs'],
-    image: thumb('https://www.kouturekonect.com/'),
-    demo: 'https://www.kouturekonect.com/',
-    featured: true,
-    category: 'production',
-    company: 'Kouture Konect LLC',
-    highlights: [
-      'Full Laravel 8 → 11 migration',
-      'Scalable REST API supporting web & mobile',
+    name: 'Ruvian',
+    status: 'beta',
+    statusLabel: 'Private beta',
+    summary: 'Operations and accountability for organisations with many branches: churches, NGOs, schools and cooperatives.',
+    features: [
+      'Branch returns, remittances and fund accounting with audit trails',
+      'Members, programs, attendance and QR check-in',
+      'Modules each organisation switches on, like school fees or messaging',
+      "Each organisation's data kept separate by the database itself",
     ],
+    stack: ['Go', 'PostgreSQL', 'Vue 3', 'Nuxt 4'],
+    url: 'https://getruvian.com/',
+    urlLabel: 'getruvian.com',
+    footnote: 'Novenza Studio · early access open',
   },
-  {
-    id: 18,
-    title: 'Weeshr',
-    description:
-      'Gifting marketplace platform allowing users to gift themselves or surprise loved ones. Led backend as Senior Developer: built wallet system, payments, payouts, and realtime notification infrastructure.',
-    stack: ['Node.js', 'TypeScript', 'Redis', 'MongoDB', 'Socket.IO', 'Paystack', 'Supabase', 'Docker'],
-    image: 'https://res.cloudinary.com/drykej1am/image/upload/v1757702126/weeshr-marketplace/Desktop_-_19_jcvfpg.png',
-    demo: 'https://weeshr.com/',
-    featured: true,
-    category: 'production',
-    company: 'Weeshr App Ltd',
-    highlights: [
-      '+25% user engagement via notification system',
-      '-30% fraud incidents in payment system',
-      '-40% payout processing time',
-    ],
-  },
+]
 
-  // ─── PRODUCTION (COMPANY PROJECTS) ───────────────────────────────────────
-  {
-    id: 11,
-    title: 'iPOS v2',
-    description:
-      'Point-of-sale system with a fully redesigned web interface. Rebuilt the UI from scratch to improve usability and modernise the end-user experience for retail operations.',
-    stack: ['PHP', 'Laravel', 'Vue.js', 'MySQL', 'REST APIs'],
-    image: thumb('https://ipos.silkysystems.com/'),
-    demo: 'https://ipos.silkysystems.com/',
-    featured: false,
-    category: 'production',
-    company: 'Silky Systems',
-  },
-  {
-    id: 12,
-    title: 'CRM — Silky Systems',
-    description:
-      'Customer relationship management platform with a custom Token System for product identification and user tracking. Includes reporting, analytics, and integrated payment gateway.',
-    stack: ['PHP', 'Laravel', 'Vue.js', 'MySQL', 'REST APIs'],
-    image: thumb('https://crm.silkysystems.com/'),
-    demo: 'https://crm.silkysystems.com/',
-    featured: false,
-    category: 'production',
-    company: 'Silky Systems',
-  },
-  {
-    id: 13,
-    title: 'Logistics / Warehouse FMS',
-    description:
-      'Warehouse Fulfilment Management System built to streamline order tracking and warehouse operations for Silky Systems clients.',
-    stack: ['PHP', 'Laravel', 'Vue.js', 'MySQL', 'REST APIs'],
-    image: thumb('https://logistics.silkysystems.com/'),
-    demo: 'https://logistics.silkysystems.com/',
-    featured: false,
-    category: 'production',
-    company: 'Silky Systems',
-  },
-  {
-    id: 14,
-    title: 'iPortal',
-    description:
-      'Admin and operations portal for Silky Systems. Features robust authentication, role-based authorization, multi-language support, and a comprehensive management dashboard.',
-    stack: ['PHP', 'Laravel', 'Vue.js', 'MySQL', 'REST APIs'],
-    image: thumb('https://iportal.silkysystems.com/'),
-    demo: 'https://iportal.silkysystems.com/',
-    featured: false,
-    category: 'production',
-    company: 'Silky Systems',
-  },
+export interface EarlierProject {
+  name: string
+  summary: string
+  type: 'open source' | 'client' | 'personal'
+  stack: string
+  link?: { label: string; url: string }
+}
 
-  // ─── PRODUCTION (CLIENT PROJECTS) ────────────────────────────────────────
+export const earlierWork: EarlierProject[] = [
   {
-    id: 17,
-    title: 'Flowtali',
-    description:
-      'Full SaaS platform for freelancers and self-employed professionals. Covers the complete admin workflow — invoices, receipts, projects, and branded letterheads — with multi-tenant architecture and subscription management.',
-    stack: ['PHP', 'Laravel', 'Vue.js', 'MySQL', 'REST APIs'],
-    image: thumb('https://www.flowtali.com/'),
-    demo: 'https://www.flowtali.com/',
-    featured: false,
-    category: 'production',
-    highlights: [
-      'Invoice & receipt generation for freelancers',
-      'Project management and letterhead creation',
-      'End-to-end admin workflow in one platform',
-    ],
+    name: 'Précis',
+    summary: 'PHP framework from scratch: router, ORM, DI container',
+    type: 'open source',
+    stack: 'PHP · Pest · Phinx',
+    link: { label: 'GitHub', url: 'https://github.com/codeDeeAi/Precis' },
   },
   {
-    id: 19,
-    title: 'Olayinka Ojo',
-    description:
-      'Professional portfolio and service hub for a multidisciplinary expert in environmental law, ESG advisory, leadership coaching, and pastoral ministry. Built for a client operating across Central Europe, Africa, and North America.',
-    stack: ['Nuxt.js', 'Vue.js', 'TypeScript'],
-    image: thumb('https://www.olayinkaojo.com/'),
-    demo: 'https://www.olayinkaojo.com/',
-    featured: false,
-    category: 'production',
-    company: 'Evnoia Group',
-    highlights: [
-      'Multi-disciplinary professional presence across law, faith & leadership',
-      'Integrated consultation scheduling and book sales',
-      'Multi-location operations: Czech Republic, Nigeria, Kenya & Zambia',
-    ],
-  },
-
-  // ─── OPEN SOURCE / PERSONAL ───────────────────────────────────────────────
-  {
-    id: 1,
-    title: 'Hulo',
-    description:
-      'Real estate marketplace PWA connecting verified house owners and realtors to prospective buyers. Features secure auth, realtime chats via Redis + Pusher, AWS S3 uploads, subscriptions, and listing recommendations.',
-    stack: ['PWA', 'Vue.js', 'Nuxt.js', 'Laravel', 'PHP', 'Redis', 'Pusher', 'AWS S3', 'Node.js', 'Express.js', 'SQL'],
-    image: '/images/projects/hulo.png',
-    featured: false,
-    category: 'fullstack',
-    highlights: [
-      'Real-time chat infrastructure with Redis pub/sub and Pusher',
-      'AWS S3 for scalable media storage',
-      'Realtor verification and subscription system',
-    ],
+    name: 'Olayinka Ojo',
+    summary: 'Portfolio and booking site for a multi-country consultant',
+    type: 'client',
+    stack: 'Nuxt · TypeScript',
+    link: { label: 'Site', url: 'https://www.olayinkaojo.com/' },
   },
   {
-    id: 2,
-    title: 'Précis',
-    description:
-      'Custom PHP framework built from scratch — routing, MVC, migrations, Active Records, middlewares, events, and a DI container. Built to understand how Laravel and Symfony work under the hood.',
-    stack: ['PHP', 'Composer', 'Pest', 'Phinx'],
-    image: '/images/projects/precis.png',
-    github: 'https://github.com/codeDeeAi/Precis',
-    featured: false,
-    category: 'framework',
-    highlights: [
-      'Custom routing engine with middleware pipeline',
-      'Active Record ORM with migration system',
-      'Event-driven architecture and DI container',
-    ],
+    name: 'Hulo',
+    summary: 'Real estate PWA with realtime chat and S3 media',
+    type: 'personal',
+    stack: 'Laravel · Nuxt · Redis · Pusher',
   },
   {
-    id: 3,
-    title: 'CBT Platform APIs',
-    description:
-      'Backend API system for Computer Based Assessments. Teachers create exams, register students, and grade results. Features auto + manual grading, instant results, and performance analytics.',
-    stack: ['PHP', 'Laravel', 'REST APIs', 'MySQL'],
-    image: '/images/projects/cbt.png',
-    github: 'https://github.com/codeDeeAi/CBT_be_apis',
-    featured: false,
-    category: 'backend',
-    highlights: [
-      'Auto and manual grading engine',
-      'Instant result computation post-exam',
-      'Student performance analytics',
-    ],
+    name: 'CBT Platform APIs',
+    summary: 'Exam engine with auto and manual grading',
+    type: 'open source',
+    stack: 'Laravel · MySQL',
+    link: { label: 'GitHub', url: 'https://github.com/codeDeeAi/CBT_be_apis' },
   },
   {
-    id: 4,
-    title: 'Thrift.io',
-    description:
-      'Application for organising rotating savings (AJO) among family and friends. Create thrift groups, manage members, auto-calculate due dates, and track finances.',
-    stack: ['Vue.js', 'Laravel', 'PHP', 'MySQL', 'JavaScript'],
-    image: '/images/projects/thrift.png',
-    github: 'https://github.com/codeDeeAi/thrift.io',
-    featured: false,
-    category: 'fullstack',
-  },
-  {
-    id: 5,
-    title: 'Wafi — Bank CLI',
-    description:
-      'PHP 8+ CLI application for bank transactions: creating accounts, depositing credits, and transferring between accounts. Clean OOP design, fully backwards compatible.',
-    stack: ['PHP 8+', 'Composer', 'CLI', 'OOP'],
-    image: '/images/projects/wafi.png',
-    github: 'https://github.com/codeDeeAi/wafi',
-    featured: false,
-    category: 'cli',
-  },
-  {
-    id: 6,
-    title: 'Countries & States API',
-    description:
-      'RESTful API built with Node.js and Express.js exposing all countries and their states. Simple, powerful endpoints with fast response times.',
-    stack: ['Node.js', 'Express.js', 'JavaScript', 'REST APIs'],
-    image: '/images/projects/countries-states.png',
-    github: 'https://github.com/codeDeeAi/countries_and_states_api',
-    demo: 'https://countries-and-states.onrender.com/api/v1',
-    featured: false,
-    category: 'backend',
-  },
-  {
-    id: 7,
-    title: 'Finance Tracker',
-    description:
-      'Personal finance tracker for daily income, expenses, and savings across multiple accounts. Visualises data through lists and charts.',
-    stack: ['Vue.js', 'Laravel', 'PHP', 'MySQL', 'JavaScript'],
-    image: '/images/projects/financelogger.png',
-    github: 'https://github.com/codeDeeAi/financeloggerclient',
-    featured: false,
-    category: 'fullstack',
-  },
-  {
-    id: 8,
-    title: 'Issue / Bug Tracker',
-    description:
-      'Issue and bug tracker for QA teams. Manage teams, assign tasks, record defects, and export reports to Excel.',
-    stack: ['Vue.js', 'Laravel', 'PHP', 'MySQL', 'JavaScript'],
-    image: '/images/projects/bugtracker.png',
-    github: 'https://github.com/codeDeeAi/issue_tracker.git',
-    featured: false,
-    category: 'fullstack',
-  },
-  {
-    id: 9,
-    title: 'LaraBlog',
-    description:
-      'Full-featured blog platform with role-based admin panel, fully customisable by the administrator with user roles and permissions.',
-    stack: ['Laravel 7', 'Vue.js', 'PHP', 'MySQL'],
-    image: '/images/projects/larablog.png',
-    github: 'https://github.com/codeDeeAi/Larablog.git',
-    featured: false,
-    category: 'fullstack',
-  },
-  {
-    id: 10,
-    title: 'Hulo Admin Dashboard',
-    description:
-      'Administrator portal for the Hulo platform with realtime notifications, role-based access, app customisation, email management, and listing controls.',
-    stack: ['Vue.js', 'TypeScript', 'JavaScript', 'AWS S3', 'Pusher', 'REST APIs'],
-    image: '/images/projects/hulo-admin.png',
-    featured: false,
-    category: 'fullstack',
+    name: 'Countries & States API',
+    summary: 'Public REST API',
+    type: 'open source',
+    stack: 'Node · Express',
+    link: { label: 'API', url: 'https://countries-and-states.onrender.com/api/v1' },
   },
 ]
